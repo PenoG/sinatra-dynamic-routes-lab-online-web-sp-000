@@ -7,6 +7,6 @@ class App < Sinatra::Base
     "#{@backwords}"
   end
   
-  get ''
+  get '/square/:number'
 
 end
