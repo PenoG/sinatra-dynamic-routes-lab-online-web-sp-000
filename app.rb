@@ -7,6 +7,9 @@ class App < Sinatra::Base
     "#{@backwords}"
   end
   
-  get '/square/:number'
+  get '/square/:number' do
+    @num = params[:number].to_i
+    @sqaured = @num.
+  end
 
 end
