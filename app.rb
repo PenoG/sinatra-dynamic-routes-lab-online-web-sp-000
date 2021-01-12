@@ -6,5 +6,7 @@ class App < Sinatra::Base
     @backwords = @ns.reverse
     "#{@backwords}"
   end
+  
+  get ''
 
 end
