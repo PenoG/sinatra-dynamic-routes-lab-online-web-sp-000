@@ -8,7 +8,9 @@ class App < Sinatra::Base
   end
   
   get '/square/:number' do
-    
+    @num = params[:number].to_i
+    @sqaured = sqrt(@num)
+    "#{@sqaured}"
   end
 
 end
